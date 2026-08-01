@@ -1,4 +1,5 @@
 import "./about.css";
+import "./stamp.css";
 
 export default function Home() {
   return (
