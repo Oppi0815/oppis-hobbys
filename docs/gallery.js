@@ -6,7 +6,7 @@
     const modal = document.createElement('div');
     modal.className = 'lightbox';
     modal.innerHTML = `<button class="close" aria-label="Schließen">×</button><button class="left" aria-label="Vorheriges Bild">‹</button><figure><img><figcaption></figcaption></figure><button class="right" aria-label="Nächstes Bild">›</button>`;
-    const show = () => { const image = figures[current].querySelector('img'); modal.querySelector('img').src = image.src; modal.querySelector('img').alt = image.alt; modal.querySelector('figcaption').innerHTML = `${figures[current].querySelector('figcaption').textContent} <span>· Pfeiltasten zum Blättern · Esc zum Schließen</span>`; };
+    const show = () => { const image = figures[current].querySelector('img'); const description = figures[current].dataset.description; modal.querySelector('img').src = image.src; modal.querySelector('img').alt = image.alt; modal.querySelector('figcaption').innerHTML = `${figures[current].querySelector('figcaption').textContent} <span>· Pfeiltasten zum Blättern · Esc zum Schließen</span>${description ? `<p class="lightbox-description">${description}</p>` : ''}`; };
     const close = () => { document.removeEventListener('keydown', keys); modal.remove(); };
     const move = (amount) => { current = (current + amount + figures.length) % figures.length; show(); };
     const keys = (event) => { if (event.key === 'Escape') close(); if (event.key === 'ArrowLeft') move(-1); if (event.key === 'ArrowRight') move(1); };
