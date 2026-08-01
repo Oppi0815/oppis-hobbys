@@ -20,10 +20,7 @@ export default function Home() {
             <p className="lead">Willkommen bei Oppis Hobbys: Geschichten aus der Motorradwerkstatt, kleine Wunder aus der Makro-Welt und praktische Projekte rund um Linux und Computer.</p>
             <a className="button" href="#projekte">Meine Projekte ansehen</a>
           </div>
-          <div className="hero-art" role="img" aria-label="Stilisierte Zeichnung eines klassischen Motorradtanks mit Werkzeugsymbolen">
-            <span className="tank-label">CB250G</span>
-            <span className="bolt bolt-one" /><span className="bolt bolt-two" /><span className="bolt bolt-three" />
-          </div>
+          <div className="hero-stamp"><img src="/images/sticker.png" alt="Oppis Hobbys: Motorrad, Natur und Technik" /></div>
         </section>
         <section id="fotografie" className="section dark-section">
           <div className="section-heading"><p className="eyebrow">02 · Draußen</p><h2>Makro-Insektenfotografie</h2></div>
