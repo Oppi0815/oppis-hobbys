@@ -1,0 +1,5 @@
+import "../projekte/cb250g/gallery.css";
+
+export default function FotografiePage() {
+  return <main className="project-page macro-page"><a className="back-link" href="/">← Zur Startseite</a><header className="project-header"><p className="eyebrow">Fotografie · Makro</p><h1>Die Welt im Kleinen</h1><p>Makroaufnahmen aus Garten, Wiese und Wald – jede mit ihrer eigenen kleinen Geschichte.</p></header><section><div className="gallery-intro"><p className="eyebrow">Bildergalerie</p><h2>Skorpionsfliege</h2></div><figure className="macro-feature"><img src="/images/makro/skorpionsfliege-maennchen.jpg" alt="Männchen einer Skorpionsfliege auf einem Grashalm" /><figcaption>Männchen einer Skorpionsfliege</figcaption></figure><aside className="nature-note"><h3>Der „Stachel“ ist harmlos</h3><p>Der nach oben gebogene Hinterleib des Männchens erinnert an einen Skorpion, ist aber kein Stachel: Er trägt die Geschlechtsorgane. Skorpionsfliegen fressen vor allem tote Insekten und andere kleine Wirbellose – sie helfen damit beim Recycling in der Natur.</p></aside></section></main>;
+}

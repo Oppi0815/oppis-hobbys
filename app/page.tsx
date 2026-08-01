@@ -27,7 +27,7 @@ export default function Home() {
         </section>
         <section id="fotografie" className="section dark-section">
           <div className="section-heading"><p className="eyebrow">02 · Draußen</p><h2>Makro-Insektenfotografie</h2></div>
-          <div className="split photo-layout"><div><h3>Ganz nah dran</h3><p>Die kleinen Bewohner von Garten, Wiese und Wald zeigen aus der Nähe erstaunliche Formen und Farben. Diese Seite wird eine Auswahl meiner Makroaufnahmen zeigen – mit Platz für die Geschichten hinter den Bildern.</p></div><div className="macro-placeholder" role="img" aria-label="Grafischer Platzhalter für ein Makro-Insektenfoto"><span>Makro-Galerie<br />folgt</span></div></div>
+          <div className="split photo-layout"><div><h3>Ganz nah dran</h3><p>Die kleinen Bewohner von Garten, Wiese und Wald zeigen aus der Nähe erstaunliche Formen und Farben. Diese Galerie sammelt Makroaufnahmen – mit Platz für die Geschichten hinter den Bildern.</p><a className="button" href="/fotografie">Zur Makro-Galerie</a></div><a className="macro-preview" href="/fotografie" aria-label="Makro-Galerie öffnen"><img src="/images/makro/skorpionsfliege-maennchen.jpg" alt="Männchen einer Skorpionsfliege auf einem Grashalm" /><span>Makro-Galerie</span></a></div>
         </section>
         <section id="projekte" className="section feature-section">
           <div className="section-heading"><p className="eyebrow">03 · Aktuelles Projekt</p><h2>Honda CB250G restaurieren</h2></div>
