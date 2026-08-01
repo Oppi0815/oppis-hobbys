@@ -7,9 +7,9 @@ const photos = [
   ["/images/cz125/fertig-restauriert.jpg", "Fertig restaurierte CZ 125 453 von 1963", "Fertig restauriert"],
   ["/images/cz125/ausgangszustand.jpg", "CZ 125 453 vor der Restaurierung", "Ausgangszustand"],
   ["/images/cz125/werkstatt.jpg", "CZ 125 453 in der Werkstatt", "Arbeiten in der Werkstatt"],
-  ["/images/cz125/lenkkopf.jpg", "Lenkkopf der CZ während der Aufarbeitung", "Lenkkopf überarbeitet"],
-  ["/images/cz125/halterung.jpg", "Aufgearbeitete Halterung der CZ", "Ein Detail gerettet"],
-  ["/images/cz125/detail.jpg", "Detail der restaurierten CZ 125 453", "Sorgfalt bis ins Detail"],
+  ["/images/cz125/lenkkopf.jpg", "Lampengehäuse mit Lenker der CZ", "Lampengehäuse mit Lenker"],
+  ["/images/cz125/halterung.jpg", "Rostige Halterung der CZ", "Viel Rost, viel Arbeit"],
+  ["/images/cz125/detail.jpg", "Ölablassschraube der CZ 125 453", "Sorgfalt bis ins Detail: Ölablassschraube jetzt mit Magnet"],
 ] as const;
 
 export function Gallery() {
