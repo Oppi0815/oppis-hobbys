@@ -1,5 +1,5 @@
 .about { padding-block:clamp(45px,6vw,78px); }
 .about .section-heading { margin-bottom:12px; }
 .about-layout { display:grid; grid-template-columns:minmax(0,720px) 280px; align-items:center; gap:clamp(20px,4vw,48px); }
-.about-portrait { width:100%; aspect-ratio:1; object-fit:cover; border:9px solid #fff; border-radius:50%; box-shadow:12px 14px 0 rgba(29,41,40,.15); transform:translateY(-14px) rotate(-3deg); }
+.about-portrait { width:100%; aspect-ratio:1; object-fit:cover; object-position:center 15%; border:9px solid #fff; border-radius:50%; box-shadow:12px 14px 0 rgba(29,41,40,.15); transform:translateY(-14px) rotate(-3deg); }
 @media (max-width:720px) { .about-layout { grid-template-columns:1fr; }.about-portrait { width:min(270px,74vw); } }
