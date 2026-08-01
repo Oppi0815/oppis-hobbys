@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <header className="site-header">
         <a className="brand" href="#start" aria-label="Oppis Hobbys – Startseite">
-          <span className="brand-mark">OH</span>
+          <span className="brand-mark"><img src="/images/horst-comic-selected.png" alt="Horst" /></span>
           <span>Oppis Hobbys</span>
         </a>
         <nav aria-label="Hauptnavigation">
