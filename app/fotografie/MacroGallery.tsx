@@ -32,7 +32,9 @@ export function MacroGallery() {
   return <>
     <div className="gallery macro-gallery macro-opening" aria-label="Makroaufnahme Skorpionsfliege">{image(photos[0], 0)}</div>
     <aside className="nature-note"><h3>Der „Stachel“ ist harmlos</h3><p>Der nach oben gebogene Hinterleib des Skorpionsfliegen-Männchens erinnert an einen Skorpion, ist aber kein Stachel: Er trägt die Geschlechtsorgane. Skorpionsfliegen fressen vor allem tote Insekten und andere kleine Wirbellose.</p></aside>
-    <div className="gallery macro-gallery macro-previews" aria-label="Weitere Makroaufnahmen">{photos.slice(1).map((photo, index) => image(photo, index + 1))}</div>
+    <section className="macro-category"><h3>Insekten</h3><div className="gallery macro-gallery macro-previews" aria-label="Makroaufnahmen von Insekten">{image(photos[1], 1)}{image(photos[3], 3)}{image(photos[5], 5)}</div></section>
+    <section className="macro-category"><h3>Libellen</h3><div className="gallery macro-gallery macro-previews" aria-label="Makroaufnahmen von Libellen">{image(photos[2], 2)}{image(photos[4], 4)}</div></section>
+    <section className="macro-category macro-coming"><h3>Weitere Themen</h3><p>Spinnen · Reptilien &amp; Amphibien · Pflanzen &amp; Details · Andere Entdeckungen <span>Bilder folgen</span></p></section>
     {selected !== null && <div className="lightbox" role="dialog" aria-modal="true" aria-label="Großansicht der Galerie" onClick={() => setSelected(null)}><button className="lightbox-close" onClick={() => setSelected(null)} aria-label="Großansicht schließen">×</button><button className="lightbox-arrow left" onClick={event => { event.stopPropagation(); move(-1); }} aria-label="Vorheriges Bild">‹</button><figure onClick={event => event.stopPropagation()}><img src={photos[selected][0]} alt={photos[selected][1]} /><figcaption>{photos[selected][2]} <span>· Pfeiltasten zum Blättern · Esc zum Schließen</span>{photos[selected][3] && <p className="lightbox-description">{photos[selected][3]}</p>}</figcaption></figure><button className="lightbox-arrow right" onClick={event => { event.stopPropagation(); move(1); }} aria-label="Nächstes Bild">›</button></div>}
   </>;
 }
