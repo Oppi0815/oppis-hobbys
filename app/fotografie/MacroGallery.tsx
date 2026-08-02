@@ -8,8 +8,8 @@ const photos = [
   ["/images/makro/weissling.jpg", "Kohlweißling auf einer Blüte", "Kohlweißling (wahrscheinlich)", null],
   ["/images/makro/kleinlibelle-frisch-geschluepft.jpg", "Frisch geschlüpfte Kleinlibelle auf einem Grashalm", "Frisch geschlüpfte Kleinlibelle", "Diese Kleinlibelle (englisch: damselfly) ist gerade geschlüpft; die Art ist auf dem Foto nicht sicher bestimmbar. Ihre Larve hat zuvor im Wasser gelebt, bevor sie an einer Pflanze zur geflügelten Libelle wurde."],
   ["/images/makro/wasserlaeufer-paarung.jpg", "Wasserläufer bei der Paarung", "Wasserläufer bei der Paarung", "Wasserläufer nutzen die Oberflächenspannung des Wassers und bleiben deshalb trocken auf der Wasseroberfläche. Hier ist ein Paar bei der Fortpflanzung zu sehen."],
-  ["/images/makro/kleinlibelle-weibchen.jpg", "Kleinlibelle, vermutlich Weibchen", "Kleinlibelle · vermutlich Weibchen", "Die genaue Art ist auf diesem Foto nicht sicher bestimmbar. Bei vielen Kleinlibellen sind die Männchen leuchtend blau, während Weibchen oft weniger auffällig grünlich oder bräunlich gefärbt sind."],
-  ["/images/makro/haarmuecke.jpg", "Haarmücke auf einem Stück Holz", "Haarmücke (vermutlich)", "Sehr wahrscheinlich eine Haarmücke aus der Familie Bibionidae. Die genaue Art lässt sich am Foto nicht sicher festlegen; auffällig sind die großen Augen und die langen Beine."],
+  ["/images/makro/kleinlibelle-weibchen.jpg", "Kleinlibelle auf einer Blüte", "Kleinlibelle", "Eine Kleinlibelle auf einer Blüte. Die genaue Art und das Geschlecht bleiben auf diesem Foto offen."],
+  ["/images/makro/haarmuecke.jpg", "Schnepfenfliege auf einem Stück Holz", "Schnepfenfliege", "Eine Schnepfenfliege auf einem Stück Holz. Die großen Augen und die langen Beine sind für diese Fliegengruppe auffällig."],
 ] as const;
 
 export function MacroGallery() {
