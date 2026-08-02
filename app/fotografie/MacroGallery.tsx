@@ -10,6 +10,12 @@ const photos = [
   ["/images/makro/wasserlaeufer-paarung.jpg", "Wasserläufer bei der Paarung", "Wasserläufer bei der Paarung", "Wasserläufer nutzen die Oberflächenspannung des Wassers und bleiben deshalb trocken auf der Wasseroberfläche. Hier ist ein Paar bei der Fortpflanzung zu sehen."],
   ["/images/makro/kleinlibelle-weibchen.jpg", "Kleinlibelle auf einer Blüte", "Kleinlibelle", "Eine Kleinlibelle auf einer Blüte. Die genaue Art und das Geschlecht bleiben auf diesem Foto offen."],
   ["/images/makro/haarmuecke.jpg", "Schnepfenfliege auf einem Stück Holz", "Schnepfenfliege", "Eine Schnepfenfliege auf einem Stück Holz. Die großen Augen und die langen Beine sind für diese Fliegengruppe auffällig."],
+  ["/images/makro/toepferwespe-nest-ei.jpg", "Töpferwespe an einer Lehmzelle mit Ei", "Lehmzelle mit Ei", "Töpfer- oder Mauerwespe (Eumeninae), vermutlich eine Art der Gattung Antepipona. In einer Lehmzelle liegt ein Ei."],
+  ["/images/makro/toepferwespe-am-nest.jpg", "Töpferwespe am Lehmnest", "Am Lehmnest", "Die solitär lebende Wespe baute ihre Brutzellen direkt am Haus in Forrest Hills bei Kloof, Südafrika."],
+  ["/images/makro/toepferwespe-lehmzellen.jpg", "Töpferwespe zwischen Lehmzellen", "Lehmzellen", "Die Brutzellen werden einzeln aus Lehm gebaut und nach der Eiablage verschlossen."],
+  ["/images/makro/toepferwespe-drohhaltung.jpg", "Töpferwespe mit erhobenem Hinterleib", "Warnhaltung", "Beim Annähern hob die Wespe den Hinterleib als Warnung. Sie verteidigte ihr Nest jedoch nicht als Schwarm und stach nie."],
+  ["/images/makro/toepferwespe-portrait.jpg", "Portrait einer Töpferwespe", "Portrait", "Die genaue Art lässt sich auf den Fotos nicht sicher bestimmen; die Nestform und das Verhalten passen sehr gut zu einer Töpfer- oder Mauerwespe."],
+  ["/images/makro/toepferwespe-brutzellen.jpg", "Töpferwespe an ihren Brutzellen", "Brutzellen", "Die Lehmkammern schützen die Eier und die heranwachsende Brut."],
 ] as const;
 
 export function MacroGallery() {
@@ -35,6 +41,7 @@ export function MacroGallery() {
     <section className="macro-category"><h3>Schmetterlinge</h3><div className="gallery macro-gallery macro-previews" aria-label="Makroaufnahmen von Schmetterlingen">{image(photos[1], 1)}</div></section>
     <section className="macro-category"><h3>Insekten</h3><div className="gallery macro-gallery macro-previews" aria-label="Makroaufnahmen von Insekten">{image(photos[3], 3)}{image(photos[5], 5)}</div></section>
     <section className="macro-category"><h3>Libellen</h3><div className="gallery macro-gallery macro-previews" aria-label="Makroaufnahmen von Libellen">{image(photos[2], 2)}{image(photos[4], 4)}</div></section>
+    <section className="macro-category"><h3>Wespen</h3><p className="macro-location">Forrest Hills bei Kloof, KwaZulu-Natal, Südafrika · 2007</p><div className="gallery macro-gallery macro-previews" aria-label="Töpferwespen in Südafrika">{image(photos[6], 6)}{image(photos[7], 7)}{image(photos[8], 8)}{image(photos[9], 9)}{image(photos[10], 10)}{image(photos[11], 11)}</div></section>
     <section className="macro-category macro-coming"><h3>Weitere Themen</h3><p>Spinnen · Reptilien &amp; Amphibien · Pflanzen &amp; Details · Andere Entdeckungen <span>Bilder folgen</span></p></section>
     {selected !== null && <div className="lightbox" role="dialog" aria-modal="true" aria-label="Großansicht der Galerie" onClick={() => setSelected(null)}><button className="lightbox-close" onClick={() => setSelected(null)} aria-label="Großansicht schließen">×</button><button className="lightbox-arrow left" onClick={event => { event.stopPropagation(); move(-1); }} aria-label="Vorheriges Bild">‹</button><figure onClick={event => event.stopPropagation()}><img src={photos[selected][0]} alt={photos[selected][1]} /><figcaption>{photos[selected][2]} <span>· Pfeiltasten zum Blättern · Esc zum Schließen</span>{photos[selected][3] && <p className="lightbox-description">{photos[selected][3]}</p>}</figcaption></figure><button className="lightbox-arrow right" onClick={event => { event.stopPropagation(); move(1); }} aria-label="Nächstes Bild">›</button></div>}
   </>;
