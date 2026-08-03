@@ -8,6 +8,7 @@ export default function Home() {
         <a className="brand" href="#start" aria-label="Oppis Hobbys – Startseite">
           <span className="brand-mark"><img src="/images/horst-comic-selected.png" alt="Horst" /></span>
           <span>Oppis Hobbys</span>
+          <span className="mm-logo" aria-label="M und M – Motorräder und Makro"><span className="mm-letters"><i>M</i><em>&amp;</em><b>M</b></span><small>Motorräder · Makro</small></span>
         </a>
         <nav aria-label="Hauptnavigation">
           <a href="#fotografie">Fotografie</a>
