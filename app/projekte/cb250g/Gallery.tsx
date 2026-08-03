@@ -6,6 +6,7 @@ import "./gallery.css";
 const photos = [
   ["/images/cb250g/zielbild-hawaiian-blue-metallic.jpg", "Fertig restaurierte Honda CB250G in blau als Farb- und Stilvorbild", "Zielbild: Hawaiian Blue Metallic"],
   ["/images/cb250g/neuaufbau-begonnen.png", "Rahmen und Motor der Honda CB250G beim Neuaufbau", "Neuaufbau begonnen"],
+  ["/images/cb250g/zuendung-eingestellt.jpg", "Eingestellte Zündung der Honda CB250G", "Die Zündung ist eingestellt"],
   ["/images/cb250g/teile-uebersicht.jpeg", "Übersicht der zerlegten Teile der Honda CB250G", "Teileübersicht"],
   ["/images/cb250g/rahmen-und-anbauteile.jpeg", "Rahmen und Anbauteile der Honda CB250G", "Rahmen & Anbauteile"],
   ["/images/cb250g/seitenteile.jpeg", "Lackierte Seitenteile und Bauteile der Honda CB250G", "Seitenteile"],
