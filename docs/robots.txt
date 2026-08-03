@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://oppi0815.github.io/oppis-hobbys/sitemap.xml
