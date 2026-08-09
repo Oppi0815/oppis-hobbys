@@ -12,6 +12,18 @@
     gallery.append(figure);
   }
 
+  const fishingSpiderHeading = [...document.querySelectorAll('.macro-category > h3')].find((heading) => heading.textContent.trim() === (isEnglish ? 'Fishing spiders' : 'Fischspinnen'));
+  if (fishingSpiderHeading) {
+    const gallery = fishingSpiderHeading.parentElement.querySelector('.gallery');
+    const figure = document.createElement('figure');
+    const imagePath = isEnglish ? '../../images/makro/fischspinne-eikokon-suedafrika.jpg' : '../images/makro/fischspinne-eikokon-suedafrika.jpg';
+    figure.dataset.description = isEnglish
+      ? 'A female fishing spider carrying her egg sac. In this family the egg cocoon is held beneath the body with the jaws and palps, rather than being attached to the spinnerets. Shortly before the young hatch, the female builds a small nursery web in vegetation, places the cocoon inside and guards the young spiderlings.'
+      : 'Ein Weibchen mit seinem Eikokon. Bei Fischspinnen wird der Kokon unter dem Körper mit Kieferklauen und Tastern getragen – nicht an den Spinnwarzen befestigt. Kurz bevor die Jungspinnen schlüpfen, baut das Weibchen in der Vegetation ein kleines Gespinst, setzt den Kokon hinein und bewacht die Jungtiere.';
+    figure.innerHTML = `<img src="${imagePath}" alt="${isEnglish ? 'Female fishing spider carrying an egg sac in South Africa' : 'Fischspinnen-Weibchen mit Eikokon in Südafrika'}"><figcaption>${isEnglish ? 'Egg sac safely carried' : 'Eikokon sicher getragen'}</figcaption>`;
+    gallery.append(figure);
+  }
+
   const figures = [...document.querySelectorAll('.gallery figure')];
   let current = 0;
   const open = (index) => {
